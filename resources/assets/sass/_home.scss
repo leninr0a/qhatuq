@@ -1,0 +1,42 @@
+.caption{
+	padding: 9px;
+	color: #242424;
+	background-color: inherit;
+}
+
+.content-slide{
+	padding: 9px;
+	background-color: #F8F8F8;
+	border: 1px solid #EDEAEA;
+	margin-bottom: 30px;
+	@extend .border-10;
+}
+
+.ih-item.square {
+    width: auto !important;
+    height: auto !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.ih-item.square.effect13 .info{
+	border-radius: 10px !important;
+}
+
+.list-products{
+	@extend .none-list;
+	margin: 0;
+	margin-left: -7%;
+}
+
+.product{
+	padding: 4px;
+	background-color: white;
+	border: 1px solid #EDEAEA;
+	@extend .border-10;
+}
+
+.subtitle{
+	font-size: 17.5px;
+	font-weight: bold;
+}

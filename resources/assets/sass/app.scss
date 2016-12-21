@@ -1,9 +1,171 @@
-
-// Fonts
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
-
 // Variables
-@import "variables";
+@import "variables",
+		"common",
+		"home";
 
-// Bootstrap
-@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+body{
+	font-family: 'Roboto', sans-serif;
+}
+
+/***********************************************************************************/
+/*                              Estilos del Header  							   */
+/***********************************************************************************/
+
+#sectionNav{
+	background-color: #2f2f2f;
+}
+
+.barra-top{
+	@extend .text-white;
+	padding-top: 15px;
+	font-size: 18px;
+}
+
+.button-login{
+	padding: 14px;
+}
+
+.font-brand{
+	font-size: 35px;
+}
+
+.font-navbar{
+	font-size: 20px;
+}
+
+.navbar-color{
+	background-color:  #242424 !important;
+	padding: 12px 0;
+	margin-top: 15px;
+}
+
+.pull-right{
+	float: right;
+	@extend .text-white;
+}
+
+.search{
+	display: none !important;
+}
+
+/***********************************************************************************/
+/*                              Estilos del Slider     							   */
+/***********************************************************************************/
+
+.without-margin{
+	margin-right: 0 !important;
+}
+
+.without-padding{
+	padding-right: 0 !important;
+}
+
+/***********************************************************************************/
+/*                              Estilos del Home     							   */
+/***********************************************************************************/
+
+#mainBody{
+	padding-top: 30px;
+	padding-bottom: 15px;
+	#sideBar{
+		border: 1px solid #242424;
+		@extend .border-10;
+		background-color: #F8F8F8;
+		h3{
+			text-align: center;
+			margin-left: -15px;
+		    margin-right: -15px;
+		    margin-top: 9px;
+		    border-bottom: 1px solid #242424;
+		    padding-bottom: 5px;
+		}
+		ul{
+			padding-left: 0;
+			@extend .none-list;
+			li{
+				padding-bottom: 5px;
+    			font-size: 1.2em;
+				a{
+					@extend .none-decoration;
+					color: inherit;
+				}
+			}
+		}
+	}
+}
+
+#myCarousel{
+	margin: 0 3.2%;
+	li{
+		padding-right: 0 !important;
+		img{
+			width: 100%;
+			height: auto;
+		}
+		h5{
+			@extend .center;
+		}
+	}
+}
+
+#products{
+	padding-left: 3% !important;
+}
+
+.last-shop{
+	ul{
+		padding-left: 0 !important;
+		@extend .none-list;
+		li{
+			padding-bottom: 30px;
+			.caption{
+				@extend .center;
+			}
+			h5, p{
+				@extend .center;
+			}
+			img{
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+}
+
+/***********************************************************************************/
+/*                              Estilos del Footer     							   */
+/***********************************************************************************/
+
+#sectionFooter{
+	background-color: #242424;
+	padding-top: 20px;
+	h3{
+		@extend .text-white;
+	}
+	ul{
+		@extend .none-list;
+		padding-left: 0;
+		li{
+			a{
+				@extend .text-white;
+				@extend .none-decoration;
+				&:focus{
+					outline: none;
+				}
+			}
+		}
+	}
+}
+
+
+/***********************************************************************************/
+/*                              Media Querys        							   */
+/***********************************************************************************/
+
+@media screen and (max-width: 768px){
+	.position-button{
+		margin: 0 auto !important;
+    	display: table !important;
+    	margin-top: inherit !important;
+	}
+}

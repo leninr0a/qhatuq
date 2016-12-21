@@ -7,6 +7,6 @@ use Illuminate\Http\Requests;
 
 class QhatuqController extends Controller{
 	public function home(){
-		return view('layouts.qhatuq',['name'=>'Cocodrilo']);
+		return view('pages.home');
 	}
 }
